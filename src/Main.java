@@ -50,9 +50,61 @@ public class Main {
                 }
 
             case 2:
-                ;
+                System.out.println("Zvol, které těleso si přeješ smazat : Krychle (1) / Kuzel (2) / Jehlan (3)");
+                int smazat = sc.nextInt();
+                sc.nextLine();
+                switch (smazat) {
+                    case 1:
+                        System.out.println("Kterou krychle chceš smazat?(zadej index): ");
+                        int indexKrychle = sc.nextInt();
+                        sc.nextLine();
+                        krychle.remove(indexKrychle);
+
+                    case 2:
+                        System.out.println("Kteri kuzel chceš smazat?(zadej index): ");
+                        int indexKuzel = sc.nextInt();
+                        sc.nextLine();
+                        krychle.remove(indexKuzel);
+
+                    case 3:
+                        System.out.println("Kteri jehlan chceš smazat?(zadej index): ");
+                        int indexJehlan = sc.nextInt();
+                        sc.nextLine();
+                        krychle.remove(indexJehlan);
+                }
             case 3:
-                ;
+                System.out.println("Výpisy");
+                System.out.println("1 - výpis všech těles /n" +
+                        "2 - všechna tělesa jdnoho druhu /n" +
+                        "3 - těleso s největším a nejmenším povrchem" +
+                        "4 - počet jednotlivých druhů těles v poli" +
+                        "5 - součet objemů všech těles" +
+                        "6 - krzchli, kužel a jehlan s největším povrchem" );
+                int vypis = sc.nextInt();
+                sc.nextLine();
+                if (vypis > 6) {
+                    System.err.println("error");
+                }
+                else if (vypis < 1) {
+                    System.err.println("error");
+                }
+                else{
+                switch (vypis) {
+                    case 1:
+                        ;
+                    case 2:
+                        ;
+                    case 3:
+                        ;
+                    case 4:
+                        ;
+                    case 5:
+                        ;
+                    case 6:
+                        ;
+                }
+                }
+
         }
 
 
