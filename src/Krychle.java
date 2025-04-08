@@ -1,8 +1,12 @@
-public class Krychle implements IDefinice {
+public class Krychle /*implements IDefinice*/ {
+    double hranaKrychle;
 
-    private int hranaKrychle;
 
-    public double povrch(){
+    public Krychle(double hranaKrychle) {
+        this.hranaKrychle = hranaKrychle;
+    }
+
+    /*public double povrch(){
         double povrchKrychle = 6*hranaKrychle*hranaKrychle;
         return povrchKrychle;
     }
@@ -14,5 +18,5 @@ public class Krychle implements IDefinice {
     public String informace() {
         System.out.println("Povrch krychle je " + povrch() + " a objem krychle je " + objem());
         return informace();
-    }
+    }*/
 }

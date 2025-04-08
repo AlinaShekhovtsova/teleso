@@ -1,13 +1,18 @@
-public class Kuzel implements IDefinice {
+public class Kuzel /*implements IDefinice*/ {
 
-    private int podstava;
-    private int vyska;
+     double podstava;
+     double vyska;
+     double polomerKuzel;
+     double vyskaKuzel;
 
+    public Kuzel(double podstava, double vyska, double polomerKuzel, double vyskaKuzel) {
+        this.podstava = podstava;
+        this.vyska = vyska;
+        this.polomerKuzel = polomerKuzel;
+        this.vyskaKuzel = vyskaKuzel;
+    }
 
-        private int polomerKuzel;
-        private int vyskaKuzel;
-
-        public double povrch(){
+       /* public double povrch(){
             double povrchKuzele = Math.sqrt((polomerKuzel * polomerKuzel) + vyska * vyska);
             return povrchKuzele;
         }
@@ -20,6 +25,6 @@ public class Kuzel implements IDefinice {
         public String informace() {
             System.out.println("Povrch kužele je " + povrch() + " a objem kužele je " + objem());
             return informace();
-        }
+        }*/
 
 }
