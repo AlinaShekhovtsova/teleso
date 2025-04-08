@@ -5,7 +5,7 @@ public class Main {
 
         ArrayList<Krychle> krychle = new ArrayList<>();
         ArrayList<Kuzel> kuzel = new ArrayList<>();
-        ArrayList<Jehlan> jehlan = new ArrayList<Jehlan>();
+        ArrayList<Jehlan> jehlan = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Vyberte jednu z možností : Přídat těleso (1) / Vypsat všechna tělesa jednoho druhu (2) / Těleso s největším a nejmenším povrchem (3) / Počet jednotlivých druhů těles v poli (4) / Součet všech objemů těles (5) / Krychli, kužel a jehlan s největším povrchem (6)");
